@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="auth_fst <= 2.5\nmse = 0.2\nsamples = 7442\nvalue = 0.2"] ;
+1 [label="keyw_idf <= 14.8\nmse = 0.1\nsamples = 5558\nvalue = 0.2"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="aff_jacc <= 0.1\nmse = 0.1\nsamples = 4973\nvalue = 0.1"] ;
+1 -> 2 ;
+3 [label="mse = 0.1\nsamples = 4947\nvalue = 0.1"] ;
+2 -> 3 ;
+4 [label="mse = 0.2\nsamples = 26\nvalue = 0.8"] ;
+2 -> 4 ;
+5 [label="auth_mid <= 1.5\nmse = 0.2\nsamples = 585\nvalue = 0.7"] ;
+1 -> 5 ;
+6 [label="mse = 0.1\nsamples = 401\nvalue = 0.9"] ;
+5 -> 6 ;
+7 [label="mse = 0.2\nsamples = 184\nvalue = 0.2"] ;
+5 -> 7 ;
+8 [label="keyw_idf <= 1.7\nmse = 0.2\nsamples = 1884\nvalue = 0.5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="keyw_idf <= -0.5\nmse = 0.2\nsamples = 1126\nvalue = 0.4"] ;
+8 -> 9 ;
+10 [label="mse = 0.0\nsamples = 150\nvalue = 1.0"] ;
+9 -> 10 ;
+11 [label="mse = 0.2\nsamples = 976\nvalue = 0.3"] ;
+9 -> 11 ;
+12 [label="auth_mid <= 2.5\nmse = 0.2\nsamples = 758\nvalue = 0.8"] ;
+8 -> 12 ;
+13 [label="mse = 0.1\nsamples = 744\nvalue = 0.8"] ;
+12 -> 13 ;
+14 [label="mse = 0.1\nsamples = 14\nvalue = 0.1"] ;
+12 -> 14 ;
+}
